@@ -1,0 +1,7 @@
+{
+  "name": "AIECO Vision",
+  "description": "Real-time object detection application using TensorFlow.js and COCO-SSD.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
