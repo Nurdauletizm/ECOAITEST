@@ -23,11 +23,6 @@ const App: React.FC = () => {
       <main className="flex-grow flex items-center justify-center p-4 sm:p-6 lg:p-8">
         <ObjectDetection />
       </main>
-
-      {/* Footer */}
-      <footer className="py-6 text-center text-gray-500 text-sm">
-        <p>Powered by TensorFlow.js • Runs locally in your browser</p>
-      </footer>
     </div>
   );
 };
