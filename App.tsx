@@ -4,9 +4,9 @@ import { VideoCameraIcon } from '@heroicons/react/24/solid';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex flex-col">
+    <div className="min-h-screen bg-green-950 text-white flex flex-col selection:bg-emerald-500 selection:text-white">
       {/* Header */}
-      <header className="py-6 border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-50">
+      <header className="py-6 border-b border-green-800 bg-green-900/50 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-emerald-600 rounded-lg shadow-lg shadow-emerald-500/20">

@@ -136,10 +136,10 @@ export const ObjectDetection: React.FC = () => {
     <div className="w-full max-w-4xl mx-auto flex flex-col items-center gap-6">
       
       {/* Status / Controls */}
-      <div className="w-full bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="w-full bg-green-900/40 backdrop-blur-sm border border-green-800 rounded-2xl p-6 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h2 className="text-xl font-semibold text-white">Object Detection</h2>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-sm text-green-200/60 mt-1">
             {isLoading 
               ? "Initializing AI model..." 
               : isCameraActive 
@@ -150,7 +150,7 @@ export const ObjectDetection: React.FC = () => {
 
         <div className="flex items-center gap-3">
           {isLoading ? (
-            <div className="flex items-center gap-2 px-6 py-3 bg-gray-800 rounded-lg text-gray-400 cursor-not-allowed">
+            <div className="flex items-center gap-2 px-6 py-3 bg-green-900/50 border border-green-800 rounded-lg text-green-400 cursor-not-allowed">
                <ArrowPathIcon className="w-5 h-5 animate-spin" />
                <span>Loading Model...</span>
             </div>
@@ -182,11 +182,11 @@ export const ObjectDetection: React.FC = () => {
       )}
 
       {/* Video Container */}
-      <div className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-800">
+      <div className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-green-800">
         {!isCameraActive && !isLoading && !error && (
            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-             <div className="text-center text-gray-600">
-                <VideoCameraIcon className="w-20 h-20 mx-auto mb-4 opacity-20" />
+             <div className="text-center text-green-800/40">
+                <VideoCameraIcon className="w-20 h-20 mx-auto mb-4 opacity-50" />
                 <p>Camera feed is inactive</p>
              </div>
            </div>
@@ -209,11 +209,11 @@ export const ObjectDetection: React.FC = () => {
           <div className="flex gap-6 text-sm">
              <div className="flex items-center gap-2">
                  <div className="w-3 h-3 bg-[#00FF00]/20 border border-[#00FF00] rounded"></div>
-                 <span className="text-gray-300">Person</span>
+                 <span className="text-green-200/80">Person</span>
              </div>
              <div className="flex items-center gap-2">
                  <div className="w-3 h-3 bg-[#00FFFF]/20 border border-[#00FFFF] rounded"></div>
-                 <span className="text-gray-300">Other Objects</span>
+                 <span className="text-green-200/80">Other Objects</span>
              </div>
           </div>
       )}
